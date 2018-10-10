@@ -1,0 +1,21 @@
+.navegacion-ppal {
+	
+	background-color: #14242c;
+
+	ul {
+		list-style:none;
+		margin: 0;
+		padding: 0;
+
+		a{
+			color: $link-nav;
+			font-family: $fuente-principal;
+			font-weight: $fw-lig;
+			font-size: 20px;
+		}
+
+		.icon {
+			fill:#FFF;
+		}
+	}
+}
