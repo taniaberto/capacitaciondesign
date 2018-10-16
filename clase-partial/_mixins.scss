@@ -1,0 +1,13 @@
+@mixin colorTexto($color) {
+	color: $color;
+	background-color: darken($color,35%);
+}
+
+@mixin grilla($float,$ancho) {
+	position: relative;
+	min-height: 1px;
+	padding-left: .938em;
+	padding-right: .938em;
+	float: $float;
+	width: $ancho;
+}

@@ -1,3 +1,7 @@
+*, :after, :before, legend {
+    box-sizing: border-box;
+}
+
 .hidden { display:none !important; visibility: hidden; }
 .visuallyhidden, .visually-hidden, .visuallyHidden { position:absolute; overflow:hidden; clip:rect(0 0 0 0); margin:-1px; padding:0; border:0; width:1px; height:1px; }
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { position:static; overflow:visible; clip:auto; margin:0; width:auto; height:auto; }
@@ -6,7 +10,8 @@
 
 svg.icon {
 	display:inline-block; vertical-align: middle;
-	width:24px; height:24px;
+	width:24px;
+	height:24px;
 	transition:all 0.3s ease-in-out;
 }
 
@@ -32,3 +37,28 @@ table {
 
 .float-right { float:right }
 .float-left { float:left }
+
+
+// grilla
+
+.container {
+	max-width: 80em;
+	padding-left: 0.938em;
+	padding-right: 0.938em;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row {
+	margin-left: -0.938em;
+	margin-right: -0.938em;	
+}
+
+.col-md-7 {
+ @include grilla(left,60%);
+}
+
+.col-md-5 {
+	 @include grilla(right,40%);
+
+}

@@ -11,11 +11,17 @@
 			color: $link-nav;
 			font-family: $fuente-principal;
 			font-weight: $fw-lig;
-			font-size: 20px;
+			font-size: 0.8rem;
 		}
 
 		.icon {
 			fill:#FFF;
+			width:15px;
+			height:15px;
+		}
+
+		li {
+			padding: 10px 20px;
 		}
 	}
 }
